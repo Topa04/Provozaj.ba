@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Provozaj.ba.B_kategorija"
+             BackgroundImageSource="pozadinapage2"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        
+        <ScrollView>
+            
+    <Grid VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+                <Frame HorizontalOptions="Center" Margin="20,20,20,0" HeightRequest="30" BackgroundColor="LightGray" CornerRadius="20">
+                    <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" VerticalOptions="Start" >
+                        <Label Text="Testovi za B kategoriju" FontAttributes="Bold" FontSize="26" HorizontalOptions="Center" Margin="0,-5,0,0" VerticalOptions="Center" HorizontalTextAlignment="Center" TextColor="SteelBlue"/>
+                    </StackLayout>
+                </Frame>
+                <Frame Grid.Row="1" HasShadow="True" CornerRadius="20" Margin="20,20,20,0" Padding="0" HeightRequest="170" VerticalOptions="Center" BackgroundColor="LightGray">
+            <StackLayout >
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Teorija"/>
+                </StackLayout.GestureRecognizers>
+                <Image WidthRequest="100" HeightRequest="100" HorizontalOptions="Start" Source="teorija"  Margin="10,35,0,0"></Image>
+                <Label  Text="Teorija za B kategoriju" FontAttributes="Bold" WidthRequest="300" Margin="120,-130,0,0" FontSize="20" TextColor="SteelBlue" />
+                <Label FontAttributes="Bold" Text="Teroija za polaganje vozačkog ispita sadrži 13 lekcija, a svaka lekcija sadrži po 20 pitanja. Ukupno postoji 247 pitanja od kojih na pravom testu dolazi 20 nasumično odabrnih. Učenik nakon odgovorenog pitanja vidi da li je označeni odgovor tačan, te koji je odgovor ispravan u slučaju netačnog odgovora." Margin="125,0,0,0" FontSize="12" TextColor="SteelBlue"/>
+            </StackLayout>
+        </Frame>
+        <Frame Grid.Row="2" HasShadow="True" CornerRadius="20" Margin="20,20,20,0" Padding="0" HeightRequest="170" VerticalOptions="Center" BackgroundColor="LightGray">
+            <StackLayout >
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Znakovi"/>
+                </StackLayout.GestureRecognizers>
+                <Image WidthRequest="100" HeightRequest="100" HorizontalOptions="Start" Source="znakovi"  Margin="10,35,0,0"></Image>
+                <Label  Text="Znakovi za B kategoriju" FontAttributes="Bold" WidthRequest="300" Margin="120,-135,0,0" FontSize="20" TextColor="SteelBlue" />
+                <Label FontAttributes="Bold" Text="Odjeljak Znakovi za polaganje vozačkog ispita sadrži 5 lekcija, a svaka lekcija sadrži po 20 pitanja. Ukupno postoji 100 pitanja od kojih na pravom testu dolazi 10 nasumično odabrnih. Učenik nakon odgovorenog pitanja vidi da li je označeni odgovor tačan, te koji je odgovor ispravan u slučaju netačnog odgovora." Margin="125,0,0,0" FontSize="12" TextColor="SteelBlue"/>
+            </StackLayout>
+        </Frame>
+        <Frame Grid.Row="3" HasShadow="True" CornerRadius="20" Margin="20,20,20,0" Padding="0" HeightRequest="200" VerticalOptions="Center" BackgroundColor="LightGray" >
+            <StackLayout>
+                <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Raskrsnice" />
+                </StackLayout.GestureRecognizers>
+                <Image WidthRequest="100" HeightRequest="100" HorizontalOptions="Start" Source="raskrsnice"  Margin="10,50,0,0"></Image>
+                <Label FontAttributes="Bold" Text="Raskrsnice za B kategoriju" Margin="120,-150,0,0" FontSize="20" TextColor="SteelBlue"/>
+                <Label FontAttributes="Bold" Text="Odjeljak Raskrsnice za polaganje vozačkog ispita sadrži 5 lekcija, a svaka lekcija sadrži po 22 pitanja. Ukupno postoji 110 pitanja od kojih na pravom testu dolazi 10 nasumično odabrnih. Učenik nakon odgovorenog pitanja vidi da li je označeni odgovor tačan, te koji je odgovor ispravan u slučaju netačnog odgovora." Margin="125,0,0,0" FontSize="12" TextColor="SteelBlue"/>
+            </StackLayout>
+        </Frame>
+        <Frame Grid.Row="4" HasShadow="True" CornerRadius="20" Margin="20" Padding="0" HeightRequest="150" VerticalOptions="Center" BackgroundColor="LightGray" >
+            <StackLayout>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Probni"/>
+                </StackLayout.GestureRecognizers>
+                <Image WidthRequest="100" HeightRequest="100" HorizontalOptions="Start" Source="Probnitest"  Margin="10,25,0,0"></Image>
+                <Label FontAttributes="Bold" Text="Probni test B kategorije" Margin="120,-125,0,0" FontSize="20" TextColor="SteelBlue"/>
+                <Label FontAttributes="Bold" Text="Posebno dizajniran test, sličan pravom testu koji se kreira od nasumično odabranih pitanja ponuđenih u svim lekcijama. Test se sastoji od 40 pitanja (20 teorije, 10 znakovi i 10 raskrsnice). Učenik na kraju testa vidi koliko je bodova osvojio na urađenom testu." Margin="125,0,0,0" FontSize="12" TextColor="SteelBlue"/>
+            </StackLayout>
+        </Frame>
+    </Grid>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

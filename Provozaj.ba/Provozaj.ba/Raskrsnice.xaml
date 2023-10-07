@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Provozaj.ba.Raskrsnice"
+             BackgroundImageSource="pozadinaR"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame HorizontalOptions="Center" Margin="0,45,0,0" HeightRequest="100" BackgroundColor="#d8dcde" >
+                <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Label  Text="Raskrsnice B kategorije" FontAttributes="Bold" FontSize="25" HorizontalOptions="Center" Margin="0,-5,0,0"  
+                            VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="#36a4bc"  HeightRequest="100" 
+                            WidthRequest="500"/>
+                </StackLayout>
+            </Frame>
+            <Button x:Name="lek1" HeightRequest="80" TextTransform="None" Text="Lekcija 1" Margin="80,35,80,20" CornerRadius="20" 
+                    FontSize="20" FontAttributes="Bold" Clicked="lekcija1" BackgroundColor="#d8dcde" TextColor="#36a4bc"
+                    BorderColor="#f0f8fc" BorderWidth="3"/>
+            <Button x:Name="lek2" HeightRequest="80" TextTransform="None" Text="Lekcija 2" Margin="80,20" CornerRadius="20" 
+                    FontSize="20" FontAttributes="Bold" Clicked="lekcija2" BackgroundColor="#d8dcde" TextColor="#36a4bc"
+                    BorderColor="#f0f8fc" BorderWidth="3"/>
+            <Button x:Name="lek3" HeightRequest="80" TextTransform="None" Text="Lekcija 3" Margin="80,20" CornerRadius="20" 
+                    FontSize="20" FontAttributes="Bold" Clicked="lekcija3" BackgroundColor="#d8dcde" TextColor="#36a4bc"
+                    BorderColor="#f0f8fc" BorderWidth="3"/>
+            <Button x:Name="lek4" HeightRequest="80" TextTransform="None" Text="Lekcija 4" Margin="80,20" CornerRadius="20" 
+                    FontSize="20" FontAttributes="Bold" Clicked="lekcija3" BackgroundColor="#d8dcde" TextColor="#36a4bc"
+                    BorderColor="#f0f8fc" BorderWidth="3"/>
+            <Button x:Name="lek5" HeightRequest="80" TextTransform="None" Text="Lekcija 5" Margin="80,20" CornerRadius="20" 
+                    FontSize="20" FontAttributes="Bold" Clicked="lekcija3" BackgroundColor="#d8dcde" TextColor="#36a4bc"
+                    BorderColor="#f0f8fc" BorderWidth="3"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

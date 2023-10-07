@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Provozaj.ba.raslek3"
+             BackgroundImageSource="pozadinakviza"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout x:Name="aplikacija">
+
+        <Label x:Name="BrPit" Text="" TextColor="White" FontSize="20" Margin="165,0"></Label>
+        <Image x:Name="slikapit" Source="raskrsnice" Margin="20,-5,20,20"></Image>
+        <Frame  Margin="20,-20,20,0" BackgroundColor="#D3DDE7" CornerRadius="20">
+            <Label x:Name="pitanje" HorizontalTextAlignment="Start" FontSize="20" TextColor="#0d7c9b"></Label>
+        </Frame>
+        <Button HeightRequest="80" FontSize="16" TextTransform="None" FontAttributes="Bold" BorderWidth="2" BorderColor="White"
+                    x:Name="dug1" Clicked="klik" CornerRadius="20" Margin="40,20,40,0" TextColor="White" BackgroundColor="Transparent">
+        </Button>
+
+        <Button HeightRequest="80" FontSize="16" TextTransform="None" TextColor="White" BackgroundColor="Transparent" FontAttributes="Bold"
+                    x:Name="dug2" Clicked="klik" CornerRadius="20" Margin="40,10,40,0" BorderWidth="2" BorderColor="White">
+        </Button>
+
+        <Button HeightRequest="80" FontSize="16" TextColor="White" BackgroundColor="Transparent" FontAttributes="Bold"
+                    x:Name="dug3" Clicked="klik" CornerRadius="20"  Margin="40,10,40,0" BorderWidth="2" BorderColor="White">
+        </Button>
+        <Button Clicked="Provjera" HeightRequest="50" FontSize="16" TextTransform="None" TextColor="#0d7c9b" BackgroundColor="#D3DDE7" FontAttributes="Bold"
+                    CornerRadius="20"  Margin="110,10,110,0" BorderWidth="2" BorderColor="#8D97A1" Text="Podnesi"/>
+
+    </StackLayout>
+</ContentPage>

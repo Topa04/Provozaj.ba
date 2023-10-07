@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Provozaj.ba.Prva_pomoc"
+             BackgroundImageSource="pppoz2"
+             NavigationPage.HasNavigationBar="False">
+    <Grid VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Frame HorizontalOptions="Center" Margin="80,50,80,0" HeightRequest="30" BackgroundColor="LightGray" CornerRadius="20">
+        <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Prva pomoć" FontAttributes="Bold" FontSize="30" HorizontalOptions="Center" Margin="0,-5,0,0"  Padding="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="Black"  HeightRequest="50" WidthRequest="200"/>
+        </StackLayout>
+        </Frame>
+        <Frame Grid.Row="2" HasShadow="True" CornerRadius="20" Margin="20,100,20,0" HeightRequest="140" VerticalOptions="Center" BackgroundColor="LightGray">
+            <StackLayout >
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="ppUcenje"/>
+                </StackLayout.GestureRecognizers>
+                <Image WidthRequest="100" HeightRequest="100" HorizontalOptions="Start" Source="vjezbapp"  Margin="0,20,0,0"></Image>
+                <Label  Text="Učenje Prve pomoći" FontAttributes="Bold" WidthRequest="300" Margin="120,-135,0,0" FontSize="20" TextColor="red" />
+                <Label FontAttributes="Bold" Text="Ova oblast se satoji od 100 pitanja podjeljenih u 10 lekcija, svaka lekcija se sastoji od 10 pitanja. Učenik nakon odgovorenog pitanja vidi da li je označeni odgovor tačan, te koji je odgovor ispravan u slučaju netačnog odgovora." Margin="125,0,0,0" FontSize="13" TextColor="#000000"/>
+            </StackLayout>
+        </Frame>
+        <Frame Grid.Row="3" HasShadow="True" CornerRadius="20" Margin="20,-100,20,0" HeightRequest="160" VerticalOptions="Center" BackgroundColor="LightGray" >
+            <StackLayout>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer  Tapped="ppProbni"/>
+                </StackLayout.GestureRecognizers>
+                <Image WidthRequest="200" HeightRequest="200" HorizontalOptions="Start" Source="probnipp" Scale="0.5" Margin="-50,-20,0,0"></Image>
+                <Label FontAttributes="Bold" Text="Probni test Prve pomoći" Margin="120,-195,0,0" FontSize="20" TextColor="Red"/>
+                <Label FontAttributes="Bold" Text="Posebno kreiran test, sličan pravom testu koji se kreira od nasumično odabranih pitanja ponuđenih u svim lekcijama. Test se sastoji od 10 pitanja. Učenik na kraju testa vidi koliko je bodova osvojio na urađenom testu." Margin="125,0,0,0" FontSize="13" TextColor="Black"/>
+            </StackLayout>
+        </Frame>
+    </Grid>
+
+</ContentPage>

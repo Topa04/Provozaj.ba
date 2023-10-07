@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Provozaj.ba.Pocetna"
+             BackgroundImageSource="pozadinapocetna"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <Button HorizontalOptions="Center" Text="VOZI!" WidthRequest="200" HeightRequest="50" CornerRadius="20" Margin="0,550,0,0" TextColor="#8d8e90" 
+                FontSize="25" FontAttributes="Bold" Clicked="Button_Clicked">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="1,0">
+                    <GradientStop Color="#feb447" Offset="0.1" />
+                    <GradientStop Color="#fc9917" Offset="1.0" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </StackLayout>
+</ContentPage>

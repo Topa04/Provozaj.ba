@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Provozaj.ba.Page2"
+              BackgroundImageSource="pozadinapage2"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <Grid VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Frame HorizontalOptions="Center" Margin="50,20,50,0" HeightRequest="60" BackgroundColor="LightGray" CornerRadius="20">
+            <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Start" VerticalOptions="Start" Margin="0,0">
+                <Label Text="Testovi za polaganje vozačkog ispita" FontAttributes="Bold" FontSize="26" Margin="0,-5,0,0"  HorizontalTextAlignment="Center" TextColor="SteelBlue"/>
+            </StackLayout>
+        </Frame>
+        <Frame Grid.Row="1" HasShadow="True" CornerRadius="20" Margin="20,20,20,0" Padding="0" HeightRequest="160" VerticalOptions="Center" BackgroundColor="LightGray">
+            <Label FontAttributes="Bold" Text="Testovi za polganje vozačkog ispita online za Bosnu i Hercegovinu preuzeta sa mon.ks.gov.ba. Pitanja za B kategoriju su podjeljena su u 3 oblasti (teorija, znakovi i raskrsnice) koje se polažu na teorijskom dijelu ispita, te prva pomoć koji se polaže kao poseban test. Oba dijela imaju dio za učenje i probni testa kao simulaciju pravog testa." FontSize="15" HorizontalTextAlignment="Center" VerticalOptions="Center" TextColor="SteelBlue"/>
+        </Frame>
+        <Frame Grid.Row="2" HasShadow="True" CornerRadius="20" Margin="20,40,20,0" HeightRequest="100" VerticalOptions="Center" BackgroundColor="LightGray">
+            <StackLayout >
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="B_kategorija"/>
+                </StackLayout.GestureRecognizers>
+                <Image WidthRequest="200" HeightRequest="200" HorizontalOptions="Start" Source="auto1" Scale="0.5" Margin="-50,-50,0,0"></Image>
+                <Label  Text="B kategorija" FontAttributes="Bold" WidthRequest="300" Margin="120,-165,0,0" FontSize="20" TextColor="SteelBlue" />
+                <Label FontAttributes="Bold" Text="Testovi za polaganje B kategorije tj. Osobnog automobila. Pitanja za ovu kategoriju propisalo je Ministarstvo obrazovanja 2012. godine." 
+                       Margin="125,0,0,0" FontSize="12" TextColor="SteelBlue"/>
+            </StackLayout>
+            </Frame>
+        <Frame Grid.Row="3" HasShadow="True" CornerRadius="20" Margin="20,-80,20,0" HeightRequest="100" VerticalOptions="Center" BackgroundColor="LightGray" >
+            <StackLayout>
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Prva_pomoc"/>
+                </StackLayout.GestureRecognizers>
+                <Image WidthRequest="200" HeightRequest="200" HorizontalOptions="Start" Source="pp" Scale="0.5" Margin="-50,-50,0,0"></Image>
+                <Label FontAttributes="Bold" Text="Prva pomoć" Margin="120,-165,0,0" FontSize="20" TextColor="SteelBlue"/>
+                <Label FontAttributes="Bold" Text="Prva pomoć je također obavezan test prlikom polaganja testa za vozački ispit. Prva pomoć sadrži ukupno 100 pitanja iz 5 lekcija, od kojih 10 nasumično odbranih dolazi na testu." Margin="125,0,0,0" FontSize="12" TextColor="SteelBlue"/>
+            </StackLayout>
+        </Frame>
+    </Grid>
+
+</ContentPage>

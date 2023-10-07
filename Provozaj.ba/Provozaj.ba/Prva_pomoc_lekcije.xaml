@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Provozaj.ba.Prva_pomoc_lekcije"
+             BackgroundImageSource="pozadinaPL"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <ScrollView>
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" HorizontalOptions="StartAndExpand" WidthRequest="400" Margin="0,50,0,50" HeightRequest="40" 
+                       BackgroundColor="#cf594d">
+                    <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label Text="Učenje Prve pomoći" FontAttributes="Bold" FontSize="25" HorizontalOptions="Center" 
+                               Margin="0,-5,0,0"  Padding="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" 
+                               TextColor="White"  HeightRequest="50" WidthRequest="250"/>
+                    </StackLayout>
+                </Frame>
+                <Frame Grid.Row="1" BackgroundColor="Transparent" Margin="0,-40,0,50">
+                    <Button Margin="60,0" Text="Lekcija 1" TextTransform="None" CornerRadius="20" FontSize="17" FontAttributes="Bold"
+                            BackgroundColor="#cf594d" BorderWidth="2" BorderColor="#b7322d" TextColor="White" Clicked="Lekcija1"/>
+                </Frame>
+                <Frame Grid.Row="2" BackgroundColor="Transparent" Margin="0,-75,0,50">
+                    <Button Text="Lekcija 2" Margin="60,0" TextTransform="None" CornerRadius="20" FontSize="17" FontAttributes="Bold"
+                            BackgroundColor="#cf594d" BorderWidth="2" BorderColor="#b7322d" TextColor="White" Clicked="Lekcija2"/>
+                </Frame>
+                <Frame Grid.Row="3" BackgroundColor="Transparent" Margin="0,-75,0,50">
+                    <Button Text="Lekcija 3" Margin="60,0" TextTransform="None" CornerRadius="20" FontSize="17" FontAttributes="Bold"
+                            BackgroundColor="#cf594d" BorderWidth="2" BorderColor="#b7322d" TextColor="White" Clicked="Lekcija3"/>
+                </Frame>
+                <Frame Grid.Row="4" BackgroundColor="Transparent" Margin="0,-75,0,50">
+                    <Button Text="Lekcija 4" Margin="60,0" TextTransform="None" CornerRadius="20" FontSize="17" FontAttributes="Bold"
+                            BackgroundColor="#cf594d" BorderWidth="2" BorderColor="#b7322d" TextColor="White"/>
+                </Frame>
+                <Frame Grid.Row="5" BackgroundColor="Transparent" Margin="0,-75,0,50">
+                    <Button Text="Lekcija 5" Margin="60,0" TextTransform="None" CornerRadius="20" FontSize="17" FontAttributes="Bold"
+                            BackgroundColor="#cf594d" BorderWidth="2" BorderColor="#b7322d" TextColor="White"/>
+                </Frame>
+                <Frame Grid.Row="6" BackgroundColor="Transparent" Margin="0,-75,0,50">
+                    <Button Text="Lekcija 6" Margin="60,0" TextTransform="None" CornerRadius="20" FontSize="17" FontAttributes="Bold"
+                            BackgroundColor="#cf594d" BorderWidth="2" BorderColor="#b7322d" TextColor="White"/>
+                </Frame>
+                <Frame Grid.Row="7" BackgroundColor="Transparent" Margin="0,-75,0,50">
+                    <Button Text="Lekcija 7" Margin="60,0" TextTransform="None" CornerRadius="20" FontSize="17" FontAttributes="Bold"
+                            BackgroundColor="#cf594d" BorderWidth="2" BorderColor="#b7322d" TextColor="White"/>
+                </Frame>
+                <Frame Grid.Row="8" BackgroundColor="Transparent" Margin="0,-75,0,50">
+                    <Button Text="Lekcija 8" Margin="60,0" TextTransform="None" CornerRadius="20" FontSize="17" FontAttributes="Bold"
+                             BackgroundColor="#cf594d" BorderWidth="2" BorderColor="#b7322d" TextColor="White"/>
+                </Frame>
+                <Frame Grid.Row="9" BackgroundColor="Transparent" Margin="0,-75,0,50">
+                    <Button Text="Lekcija 9" Margin="60,0" TextTransform="None" CornerRadius="20" FontSize="17" FontAttributes="Bold"
+                            BackgroundColor="#cf594d" BorderWidth="2" BorderColor="#b7322d" TextColor="White"/>
+                </Frame>
+                <Frame Grid.Row="10" BackgroundColor="Transparent" Margin="0,-75,0,50">
+                    <Button Text="Lekcija 10" Margin="60,0" TextTransform="None" CornerRadius="20" FontSize="17" FontAttributes="Bold"
+                            BackgroundColor="#cf594d" BorderWidth="2" BorderColor="#b7322d" TextColor="White"/>
+                </Frame>
+                
+
+            </Grid>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
